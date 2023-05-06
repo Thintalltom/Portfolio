@@ -1,14 +1,11 @@
-
 import About from './Components/About/About'
 import Navbar from './Components/Navbar/Navbar'
-
+import 'bootstrap'
 function App() {
- 
-
   return (
-    <div className='w-screen h-screen bg-slate-200'>
+    <div className='md:w-full md:h-full bg-sky-950 font-sans xs:w-full xs:h-full  '>
       <Navbar />
-      <About />
+      <About /> 
     </div>
   )
 }
