@@ -49,7 +49,7 @@ const Navbar = () => {
       </div>
 
       {/*small screen*/}
-      <div className={open ? 'hidden' : `flex-col flex text-center justify-center items-center gap-9 p-4 xs:w-full   xs:h-screen md:h-screen bg-slate-200 absolute top-0 left-0`}>
+      <div className={open ? 'hidden' : `flex-col flex text-center justify-center items-center gap-9 p-4 xs:w-full 2xl:hidden   xs:h-screen md:h-screen bg-slate-200 absolute top-0 left-0`}>
           {list.map((list) => (
               <li className='list-none px-4 cursor-pointer hover:text-sky-700 text-2xl'>{list.title}</li>
           ))}
