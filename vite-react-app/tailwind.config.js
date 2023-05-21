@@ -20,6 +20,10 @@ export default {
   
         '2xl': '1536px',
         // => @media (min-width: 1536px) { ... }
+      },
+      backgroundImage: {
+        'hero-pattern': "url('/src/assets/BookApp.jpg')",
+  
       }
     },
   },

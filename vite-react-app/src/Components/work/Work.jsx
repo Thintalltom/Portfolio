@@ -45,7 +45,7 @@ const Work = () => {
   ];
 
   return (
-    <div className="mt-[100px]">
+    <div className="mt-[100px] xs:text-xs">
       <h1 className="font-bold text-slate-200 md:text-2xl ">
         {" "}
         <span className="font-normal text-lime-500">02.</span>Where I,ve Worked
