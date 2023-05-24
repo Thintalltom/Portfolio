@@ -2,8 +2,6 @@ import About from './Components/About/About'
 import Navbar from './Components/Navbar/Navbar'
 import { useEffect, useState } from 'react'
 import PropagateLoader from "react-spinners/PropagateLoader";
-import 'bootstrap'
-import { FaSkating } from 'react-icons/fa'
 function App() {
   const [loading, setLoading] = useState(false)
 
@@ -11,7 +9,7 @@ function App() {
   setLoading(true)
   setTimeout(() => {
     setLoading(false)
-  }, 8000)
+  }, 2000)
   }, [])
   
   return (
