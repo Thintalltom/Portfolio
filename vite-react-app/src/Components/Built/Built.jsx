@@ -5,8 +5,8 @@ import { FaGithub, FaLink } from "react-icons/fa";
 
 const Built = () => {
   return (
-    <div className="mt-[100px] xs:text-xs">
-      <div>
+    <div name='work' className="mt-[-5px] 2xl:mt-[-50px] xs:text-xs w-full h-full  p-4 2xl:p-[100px] ">
+      <div > 
         <h1 className="font-normal text-white text-2xl xs:text-sm md:text-xl  lg:text-2xl">
           {" "}
           <span className="text-lime-500 text-2xl xs:text-sm md:text-xl">

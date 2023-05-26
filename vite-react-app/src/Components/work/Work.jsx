@@ -45,7 +45,8 @@ const Work = () => {
   ];
 
   return (
-    <div className="mt-[100px] xs:text-xs">
+    <div name='experience' className="mt-[100px]  2xl:mt-[10px] xs:text-xs 2xl:text-xl w-full h-full  p-4 2xl:p-[100px]  ">
+      <div>
       <h1 className="font-bold text-slate-200 md:text-2xl ">
         {" "}
         <span className="font-normal text-lime-500">02.</span>Where I,ve Worked
@@ -53,7 +54,7 @@ const Work = () => {
       <hr className="border-1 border-slate-500 mt-4" />
 
       <div className=" mt-4 ">
-        <div className="flex xs:flex xs:flex-col md:flex-row gap-4 text-slate-400">
+        <div className="flex xs:flex xs:flex-col md:flex-row gap-4 2xl:gap-[100px] text-slate-400">
           <div className="gap-9 xs:flex xs:flex-row md:flex md:flex-col ">
             <div
               onClick={() => action(1)}
@@ -92,11 +93,11 @@ const Work = () => {
                 React Developer Intern @{" "}
                 <span className="text-lime-500">SideHustle</span>
               </h1>
-              <p className="text-sm text-slate-400">
+              <p className="text-md text-slate-400">
                 August 2022 - October 2022
               </p>
               {works.map((work) => (
-                <li className="text-slate-400">{work.title}</li>
+                <li className="text-white text-md">{work.title}</li>
               ))}
             </div>
           </div>
@@ -106,9 +107,9 @@ const Work = () => {
               <h1 className="text-white font-medium">
                 Data Collector @ <span className="text-lime-500">Appen</span>
               </h1>
-              <p className="text-sm text-slate-400">June 2022 - Present</p>
+              <p className="text-md text-slate-400">June 2022 - Present</p>
               {Appen.map((work) => (
-                <li className="text-slate-400">{work.title}</li>
+                <li className="text-white 2xl:text-lg">{work.title}</li>
               ))}
             </div>
           </div>
@@ -118,13 +119,14 @@ const Work = () => {
               <h1 className="text-white font-medium">
                 Intern @ <span className="text-lime-500">ALX Africa</span>
               </h1>
-              <p className="text-sm text-slate-400">April 2022 - September 2022</p>
+              <p className="text-md text-slate-400">April 2022 - September 2022</p>
               {ALX.map((work) => (
-                <li className="text-slate-400">{work.title}</li>
+                <li className="text-white text-md">{work.title}</li>
               ))}
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

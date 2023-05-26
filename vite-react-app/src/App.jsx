@@ -2,6 +2,11 @@ import About from './Components/About/About'
 import Navbar from './Components/Navbar/Navbar'
 import { useEffect, useState } from 'react'
 import PropagateLoader from "react-spinners/PropagateLoader";
+import Info from './Components/Info/Info';
+import Work from './Components/work/Work';
+import Built from './Components/Built/Built';
+import NoteWorthy from './Components/Built/NoteWorthy';
+
 function App() {
   const [loading, setLoading] = useState(false)
 
@@ -15,6 +20,7 @@ function App() {
   return (
     
     <div>
+       
       {
       loading ? 
       <div  className='md:w-screen md:h-screen bg-sky-950 font-sans xs:h-screen xs:h-screen flex justify-center items-center '>
@@ -29,10 +35,16 @@ function App() {
     </div>
     :
     <div className='md:w-full md:h-full bg-sky-950 font-sans xs:w-full xs:h-full'>
-    <Navbar />
-    <About /> 
+   
+ <Navbar /> 
+<About />
+<Info />
+<Work />
+        <Built />
+        <NoteWorthy />
     </div>
     }
+
       
       </div>
   )

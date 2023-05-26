@@ -2,7 +2,10 @@ import React from "react";
 import { BsTwitter, BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
 const NoteWorthy = () => {
   return (
-    <div className="text-center mt-9 xs:text-xs">
+    <div name='contact' className=" 2xl:p-[100px] text-center mt-9 xs:text-xs w-full h-full  p-4  ">
+      <div>
+
+    
       <p className="text-white text-lg">
         {" "}
         <span className="text-lime-500">04. </span>Whats next?
@@ -10,7 +13,7 @@ const NoteWorthy = () => {
       <p className="text-white text-4xl font-bold mt-9 mb-4 xs:text-2xl">
         Get In Touch
       </p>
-      <p className="text-white xs:text-xs">
+      <p className="text-white xs:text-xs sm:text-md md:text-md lg:text-xl">
         Although I’m not currently looking for any new opportunities, my inbox
         is always open. Whether you have a question or just want to say hi, I’ll
         try my best to get back to you!
@@ -38,7 +41,7 @@ const NoteWorthy = () => {
       <div className="mt-[70px]">
         <p className="text-lime-500 cursor-pointer">Built by tomide</p>
       </div>
-
+      </div>
     </div>
   );
 };
