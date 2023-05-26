@@ -25,6 +25,7 @@ const Built = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 4}}
             whileInView={{opacity: 1, scale: 1, x: 0}}
+            viewport={{once: true}}
           className="lg:flex lg:flex-row cursor-pointer xs:flex xs:flex-col md:justify-items-stretch xs:hidden sm:hidden md:hidden ">
             <img
               src={Book}
@@ -60,6 +61,7 @@ const Built = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 4}}
           whileInView={{opacity: 1, scale: 1, x: 0}}
+          viewport={{once: true}}
           className="lg:flex lg:flex-row cursor-pointer xs:hidden sm:hidden md:hidden xs:flex-col-reverse lg:flex-row-reverse lg:mt-9 sm:mt-9 ">
             <img
               src={Transact}
@@ -96,6 +98,7 @@ const Built = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 4}}
         whileInView={{opacity: 1, scale: 1, x: 0}}
+        viewport={{once: true}}
         className=" lg:hidden xl:hidden 2xl:hidden cursor-pointer xs:flex xs:flex-col md:justify-items-stretch ">
             <div className="z-10">
               <h1 className="text-white xs:text-xs text-right">
@@ -135,6 +138,7 @@ const Built = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 4}}
       whileInView={{opacity: 1, scale: 1, x: 0}}
+      viewport={{once: true}}
       className="lg:flex lg:flex-row cursor-pointer xs:flex xs:flex-col-reverse  lg:hidden xl:hidden 2xl:hidden">
         <div className="z-10 xs:mt-[30px]">
           <h1 className="text-white xs:text-xs text-right">

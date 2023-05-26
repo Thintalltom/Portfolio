@@ -18,6 +18,7 @@ const Info = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 2}}
               whileInView={{opacity: 1, scale: 1, x: 0}}
+              viewport={{once: true}}
           >
             <motion.p
           
@@ -78,6 +79,7 @@ const Info = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 2 }}
             whileInView={{opacity: 1, scale: 1, x: 0}}
+            viewport={{once: true}}
             className="lg:w-[300px] md:ml-16 lg:h-75 border-2 md:ml-4 md:w-[500px] sm:w-[400px] border-lime-500 p-2 lg:mt-[40px] md:mx-[40px] rounded xs:p-1 xs:w-[200px] xs:mt-[80px] xs:mx-auto">
               <img
                 src={profile}

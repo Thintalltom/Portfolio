@@ -60,6 +60,7 @@ const Work = () => {
                animate={{ opacity: 1 }}
                transition={{ duration: 2}}
                whileInView={{opacity: 1, scale: 1, x: 0}}
+               viewport={{once: true}}
           className="gap-9 xs:flex xs:flex-row md:flex md:flex-col ">
             <div
               onClick={() => action(1)}
@@ -97,6 +98,7 @@ const Work = () => {
                animate={{ opacity: 1}}
                transition={{ duration: 2, type: "spring", stiffness: 120}}
                whileInView={{opacity: 1, scaleX: 1 }}
+               viewport={{once: true}}
           className={`${tabstate === 1 ? "text-white" : "hidden"}`}>
             <div>
               <h1 className="text-white font-medium">
@@ -117,6 +119,7 @@ const Work = () => {
           animate={{ opacity: 1}}
           transition={{ duration: 3, type: "spring", stiffness: 120}}
           whileInView={{opacity: 1, scaleX: 1 }}
+          viewport={{once: true}}
           className={`${tabstate === 2 ? "text-white" : "hidden"}`}>
             <div>
               <h1 className="text-white font-medium">
@@ -134,6 +137,7 @@ const Work = () => {
           animate={{ opacity: 1}}
           transition={{ duration: 3, type: "spring", stiffness: 120}}
           whileInView={{opacity: 1, scaleX: 1 }}
+          viewport={{once: true}}
           className={`${tabstate === 3 ? "text-white" : "hidden"}`}>
             <div>
               <h1 className="text-white font-medium">
