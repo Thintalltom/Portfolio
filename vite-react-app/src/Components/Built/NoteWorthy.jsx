@@ -1,5 +1,6 @@
 import React from "react";
 import { BsTwitter, BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
+import EmojiPicker from "emoji-picker-react";
 const NoteWorthy = () => {
   return (
     <div name='contact' className=" 2xl:p-[100px] text-center mt-9 xs:text-xs w-full h-full  p-4  ">
@@ -14,13 +15,17 @@ const NoteWorthy = () => {
         Get In Touch
       </p>
       <p className="text-white xs:text-xs sm:text-md md:text-md lg:text-xl">
-        Although I’m not currently looking for any new opportunities, my inbox
+        Although I’m currently looking for any new opportunities, my inbox
         is always open. Whether you have a question or just want to say hi, I’ll
         try my best to get back to you!
       </p>
-      <button className="mt-5  border-2 rounded-md border-lime-500 xs:p-2 xs:text-xs p-4 hover:drop-shadow-[10px 10px 5px -3px rgba(0,0,0,0.75)] text-sm text-lime-500">
-        Say Hello
-      </button>
+      <h5 className="text-xl font-bold text-lime-500  mt-4">Contact me <EmojiPicker /> </h5>
+     <form action="https://getform.io/f/14010235-323c-4574-afe5-36dca9a66011" className="mt-4" method="POST">
+       <input type='text' placeholder="Name"  className="p-4 2xl:w-[500px] text-black text-md font-md xs:w-[200px] sm:w-[400px] xl:w-[500px] rounded border-lime-500 border-2 " name='name' /> <br />
+       <input type='text' placeholder="Email" className="p-4 mt-4 2xl:w-[500px] xs:w-[200px] sm:w-[400px] xl:w-[500px] rounded  border-lime-500 border-2 " name='email' /> <br />
+       <textarea className="p-4 mt-4 2xl:w-[500px] 2xl:h-[200px] xs:w-[200px] xs:h-[100px] sm:w-[400px] xl:w-[500px] rounded  border-lime-500 border-2  " name='message' placeholder="Enter text here...."></textarea> <br />
+       <button className="border-2 border-lime-500 p-2 hover:bg-white hover:text-black mt-4  border-lime-500 border-2  text-lime-500 rounded text-md 2xl:w-[70px]">Send</button>
+     </form>
 
       <div className="hidden lg:flex  lg:justify-center lg:mt-9 lg:gap-9 sm:flex  xs:text-xs sm:justify-center sm:mt-9 sm:gap-9 md:flex  md:justify-center md:mt-9 md:gap-9 xs:flex  xs:justify-center xs:mt-9 xs:gap-9 2xl:hidden  lg:block md:block sm:block xs:block ">
       <a href="https://twitter.com/tomideofGod">
