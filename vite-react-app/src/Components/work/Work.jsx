@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { motion } from "framer-motion";
 const Work = () => {
   const [tabstate, setTabstate] = useState(1);
 
@@ -45,7 +45,7 @@ const Work = () => {
   ];
 
   return (
-    <div name='experience' className="mt-[100px]  2xl:mt-[10px] xs:text-xs 2xl:text-xl w-full h-full  p-4 2xl:p-[100px]  ">
+    <div name='experience' className="mt-[100px] xs:mt-[-8px]  2xl:mt-[10px] xs:text-xs 2xl:text-xl w-full h-full  p-4 2xl:p-[100px]  ">
       <div>
       <h1 className="font-bold text-slate-200 md:text-2xl ">
         {" "}
@@ -55,12 +55,17 @@ const Work = () => {
 
       <div className=" mt-4 ">
         <div className="flex xs:flex xs:flex-col md:flex-row gap-4 2xl:gap-[100px] text-slate-400">
-          <div className="gap-9 xs:flex xs:flex-row md:flex md:flex-col ">
+          <motion.div 
+               initial={{ opacity: 0, scale: 0 }}
+               animate={{ opacity: 1 }}
+               transition={{ duration: 2}}
+               whileInView={{opacity: 1, scale: 1, x: 0}}
+          className="gap-9 xs:flex xs:flex-row md:flex md:flex-col ">
             <div
               onClick={() => action(1)}
               className={`${
                 tabstate === 1
-                  ? "border-l-2 border-l-lime-500  bg-slate-900 text-lime-500 cursor-pointer p-2"
+                  ? "border-l-2 border-l-lime-500 xs:border-b-lime-500   bg-slate-900 text-lime-500 cursor-pointer p-2"
                   : " p-2  hover:bg-slate-900 text-slate-500 cursor-pointer"
               }`}
             >
@@ -70,7 +75,7 @@ const Work = () => {
               onClick={() => action(2)}
               className={`${
                 tabstate === 2
-                  ? "border-l-2 border-l-lime-500  bg-slate-900 text-lime-500 cursor-pointer p-2"
+                  ? "border-l-2 border-l-lime-500 xs:border-b-lime-500 bg-slate-900 text-lime-500 cursor-pointer p-2"
                   : " p-2  hover:bg-slate-900 text-slate-500 cursor-pointer"
               }`}
             >
@@ -80,14 +85,19 @@ const Work = () => {
               onClick={() => action(3)}
               className={`${
                 tabstate === 3
-                  ? "border-l-2 border-l-lime-500  bg-slate-900 text-lime-500 cursor-pointer p-2"
-                  : " p-2  hover:bg-slate-900 text-slate-500 cursor-pointer"
+                  ? "border-l-2 border-l-lime-500 xs:border-b-lime-500  bg-slate-900 text-lime-500 cursor-pointer p-2"
+                  : " p-2  hover:bg-slate-900 text-slate-500 cursor-pointer "
               }`}
             >
               ALX Africa 
             </div>
-          </div>
-          <div className={`${tabstate === 1 ? "text-white" : "hidden"}`}>
+          </motion.div>
+          <motion.div 
+               initial={{ opacity: 0, scaleX:0 }}
+               animate={{ opacity: 1}}
+               transition={{ duration: 2, type: "spring", stiffness: 120}}
+               whileInView={{opacity: 1, scaleX: 1 }}
+          className={`${tabstate === 1 ? "text-white" : "hidden"}`}>
             <div>
               <h1 className="text-white font-medium">
                 React Developer Intern @{" "}
@@ -100,9 +110,14 @@ const Work = () => {
                 <li className="text-white text-md">{work.title}</li>
               ))}
             </div>
-          </div>
+          </motion.div>
 
-          <div className={`${tabstate === 2 ? "text-white" : "hidden"}`}>
+          <motion.div
+          initial={{ opacity: 0, scaleX:0 }}
+          animate={{ opacity: 1}}
+          transition={{ duration: 3, type: "spring", stiffness: 120}}
+          whileInView={{opacity: 1, scaleX: 1 }}
+          className={`${tabstate === 2 ? "text-white" : "hidden"}`}>
             <div>
               <h1 className="text-white font-medium">
                 Data Collector @ <span className="text-lime-500">Appen</span>
@@ -112,9 +127,14 @@ const Work = () => {
                 <li className="text-white 2xl:text-lg">{work.title}</li>
               ))}
             </div>
-          </div>
+          </motion.div>
 
-          <div className={`${tabstate === 3 ? "text-white" : "hidden"}`}>
+          <motion.div 
+          initial={{ opacity: 0, scaleX:0 }}
+          animate={{ opacity: 1}}
+          transition={{ duration: 3, type: "spring", stiffness: 120}}
+          whileInView={{opacity: 1, scaleX: 1 }}
+          className={`${tabstate === 3 ? "text-white" : "hidden"}`}>
             <div>
               <h1 className="text-white font-medium">
                 Intern @ <span className="text-lime-500">ALX Africa</span>
@@ -124,7 +144,7 @@ const Work = () => {
                 <li className="text-white text-md">{work.title}</li>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
       </div>

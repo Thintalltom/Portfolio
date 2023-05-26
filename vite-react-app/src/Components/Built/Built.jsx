@@ -2,12 +2,13 @@ import React from "react";
 import Book from "../../assets/BookApp.jpg";
 import Transact from "../../assets/TransactApp.jpg";
 import { FaGithub, FaLink } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Built = () => {
   return (
-    <div name='work' className="mt-[-5px] 2xl:mt-[-50px] xs:text-xs w-full h-full  p-4 2xl:p-[100px] ">
+    <div name='work' className="mt-[-5px] 2xl:mt-[-50px]  xs:text-xs w-full h-full  p-4 2xl:p-[100px] ">
       <div > 
-        <h1 className="font-normal text-white text-2xl xs:text-sm md:text-xl  lg:text-2xl">
+        <h1 className="font-medium text-white text-2xl xs:text-sm md:text-xl  lg:text-2xl">
           {" "}
           <span className="text-lime-500 text-2xl xs:text-sm md:text-xl">
             03.
@@ -19,7 +20,12 @@ const Built = () => {
 
       <div className="mt-4 md:flex md:justify-center sm:justify-center ">
         <div className="md:flex md:flex-col md:justify-center sm:justify-center  ">
-          <div className="lg:flex lg:flex-row cursor-pointer xs:flex xs:flex-col md:justify-items-stretch xs:hidden sm:hidden md:hidden ">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0, x:100 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 4}}
+            whileInView={{opacity: 1, scale: 1, x: 0}}
+          className="lg:flex lg:flex-row cursor-pointer xs:flex xs:flex-col md:justify-items-stretch xs:hidden sm:hidden md:hidden ">
             <img
               src={Book}
               className="w-[600px] h-[400px] xs:hidden sm:hidden lg:block 2xl:block xl:block"
@@ -47,9 +53,14 @@ const Built = () => {
                 <FaLink className="text-white hover:text-lime-500 xs:text-xs" />
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="lg:flex lg:flex-row cursor-pointer xs:hidden sm:hidden md:hidden xs:flex-col-reverse lg:flex-row-reverse lg:mt-9 sm:mt-9 ">
+          <motion.div 
+          initial={{ opacity: 0, scale: 0, x:100 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 4}}
+          whileInView={{opacity: 1, scale: 1, x: 0}}
+          className="lg:flex lg:flex-row cursor-pointer xs:hidden sm:hidden md:hidden xs:flex-col-reverse lg:flex-row-reverse lg:mt-9 sm:mt-9 ">
             <img
               src={Transact}
               className="w-[600px] h-[400px] xs:hidden sm:hidden lg:block 2xl:block xl:block"
@@ -74,13 +85,18 @@ const Built = () => {
                 <FaLink className="text-white hover:text-lime-500 xs:text-xs" />
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 
       {/*for small phone */}
       
-      <div className=" lg:hidden xl:hidden 2xl:hidden cursor-pointer xs:flex xs:flex-col md:justify-items-stretch ">
+        <motion.div
+        initial={{ opacity: 0, scale: 0, x:100 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 4}}
+        whileInView={{opacity: 1, scale: 1, x: 0}}
+        className=" lg:hidden xl:hidden 2xl:hidden cursor-pointer xs:flex xs:flex-col md:justify-items-stretch ">
             <div className="z-10">
               <h1 className="text-white xs:text-xs text-right">
                 Book Web Application
@@ -106,7 +122,7 @@ const Built = () => {
                 <FaLink className="text-white hover:text-lime-500 xs:text-xs" />
               </div>
             </div>
-          </div>
+          </motion.div>
 
 
 
@@ -114,7 +130,12 @@ const Built = () => {
 
 
 
-      <div className="lg:flex lg:flex-row cursor-pointer xs:flex xs:flex-col-reverse  lg:hidden xl:hidden 2xl:hidden">
+      <motion.div 
+      initial={{ opacity: 0, scale: 0, x:100 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 4}}
+      whileInView={{opacity: 1, scale: 1, x: 0}}
+      className="lg:flex lg:flex-row cursor-pointer xs:flex xs:flex-col-reverse  lg:hidden xl:hidden 2xl:hidden">
         <div className="z-10 xs:mt-[30px]">
           <h1 className="text-white xs:text-xs text-right">
             Sales Application
@@ -138,7 +159,7 @@ const Built = () => {
             <FaLink className="text-white hover:text-lime-500 xs:text-xs" />
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

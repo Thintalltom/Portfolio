@@ -4,7 +4,7 @@ import { BsTwitter, BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
 import { motion } from "framer-motion";
 const About = () => {
   return (
-    <div  className="xl:flex  2xl:justify-between md: flex-row lg:p-9 mt-4 xs:h-full xs:w-full h-full lg:w-full  xs:mt[-50px] ">
+    <div  className="xl:flex  2xl:justify-between md: flex-row lg:p-9 mt-4 xs:h-full xs:w-full h-full lg:w-full  xs:mt[-100px] ">
       <motion.div
         initial={{ x: -250 }}
         animate={{ x: 0 }}
@@ -25,7 +25,7 @@ const About = () => {
           <BsInstagram className="text-2xl text-lime-500 2xl:mt-[20px]  cursor-pointer hover:text-red-800" />
         </a>
       </motion.div>
-      <div className="md:justify-center  md:mt-16 sm:justify-center 2xl:ml-[-40px] md:p-[40px] sm:p-[40px] xs:p-[40px] sm:mt-16">
+      <div className="md:justify-center  md:mt-16 sm:justify-center 2xl:ml-[-40px] xs:ml-[-24px] md:p-[40px] sm:p-[40px] xs:p-[40px] sm:mt-16">
         <p className="text-lime-500 font-bold xs:text-sm">Hi, my name is </p>
         <motion.h1
           initial={{ y: -250 }}
@@ -39,6 +39,7 @@ const About = () => {
           initial={{ x: -250 }}
           animate={{ x: 0 }}
           transition={{ duration: 0.8, type: "spring", stiffness: 120 }}
+          whileInView={{opacity: 1, scale: 1}}
           className="lg:text-6xl xs:text-xl xs:mt-[2px] text-zinc-400 md:font-bold md:mt-[30px] md:text-6xl sm:mt-[30px] sm:text-4xl lg:mt-4 xs:font-bold"
         >
           I build things for the web.
