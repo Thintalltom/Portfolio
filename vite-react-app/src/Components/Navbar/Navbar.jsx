@@ -11,32 +11,35 @@ const Navbar = () => {
   };
   const [open, setOpen] = useState(true);
   const handleClick = () => setOpen(!open);
+  const handleItem = () => {
+    setOpen(true);
+  };
   return (
-    <div className="h-[70px] bg-sky-950 drop-shadow-lg  items-center justify-between p-4 flex font-sans">
+    <div className="h-[70px] bg-slate-950   items-center justify-between p-4 flex font-sans">
       <div>
         <img src={Logo} alt="logoimage" className="w-[100px] cursor-pointer" />
       </div>
       {/*menu */}
-      <div className="lg:flex hidden">
-        <li className="list-none px-4 cursor-pointer hover:text-lime-500  text-sky-700 font-bold text-lg">
+      <div className="lg:flex hidden text-white">
+        <li className="list-none px-4 cursor-pointer  font-light text-lg">
           <Link to="work" smooth={true} duration={500}>
             Work
           </Link>
         </li>
 
-        <li className="list-none px-4 cursor-pointer hover:text-lime-500  text-sky-700 font-bold text-lg">
+        <li className="list-none px-4 cursor-pointer font-light text-lg">
           <Link to="experience" smooth={true} duration={500}>
             Experience
           </Link>{" "}
         </li>
 
-        <li className="list-none px-4 cursor-pointer hover:text-lime-500  text-sky-700 font-bold text-lg">
+        <li className="list-none px-4 cursor-pointer font-light text-lg">
           <Link to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
 
-        <li className="list-none px-4 cursor-pointer hover:text-lime-500  text-sky-700 font-bold text-lg">
+        <li className="list-none px-4 cursor-pointer  font-light text-lg">
           <Link to="contact" smooth={true} duration={500}>
             Contact
           </Link>
@@ -49,9 +52,9 @@ const Navbar = () => {
         onClick={handleClick}
       >
         {open ? (
-          <CiMenuFries className="text-cyan-800 text-3xl font-extrabold" />
+          <CiMenuFries className="text-cyan-800 text-3xl font-light" />
         ) : (
-          <CiCircleRemove className="text-cyan-800 text-3xl font-extrabold" />
+          <CiCircleRemove className="text-cyan-800 text-3xl font-light" />
         )}
       </motion.div>
 
@@ -66,26 +69,26 @@ const Navbar = () => {
             : `flex-col flex text-center justify-center items-center gap-9 p-4 xs:w-full xs:h-screen 2xl:hidden lg:hidden   xs:h-screen md:h-screen bg-slate-200 absolute top-0 left-0`
         }
       >
-        <li className="list-none px-4 cursor-pointer hover:text-lime-500  text-sky-700">
-          <Link to="work" smooth={true} duration={500}>
+        <li  className="list-none px-4 cursor-pointer  ">
+          <Link onClick={handleItem} to="work" smooth={true} duration={500}>
             Work
           </Link>
         </li>
 
-        <li className="list-none px-4 cursor-pointer hover:text-lime-500 text-sky-700">
-          <Link to="experience" smooth={true} duration={500}>
+        <li   className="list-none px-4 cursor-pointer  ">
+          <Link onClick={handleItem} to="experience" smooth={true} duration={500}>
             Experience
           </Link>{" "}
         </li>
 
-        <li className="list-none px-4 cursor-pointer hover:text-lime-500  text-sky-700">
-          <Link to="about" smooth={true} duration={500}>
+        <li  className="list-none px-4 cursor-pointer  ">
+          <Link onClick={handleItem} to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
 
-        <li className="list-none px-4 cursor-pointer hover:text-lime-500  text-sky-700">
-          <Link to="contact" smooth={true} duration={500}>
+        <li   className="list-none px-4 cursor-pointer">
+          <Link onClick={handleItem} to="contact" smooth={true} duration={500}>
             Contact
           </Link>
         </li>

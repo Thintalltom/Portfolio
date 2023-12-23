@@ -45,112 +45,122 @@ const Work = () => {
   ];
 
   return (
-    <div name='experience' className="mt-[100px] xs:mt-[-8px]  2xl:mt-[10px] xs:text-xs 2xl:text-xl w-full h-full  p-4 2xl:p-[100px]  ">
+    <div
+      name="experience"
+      className="mt-[100px] xs:mt-[-8px]  2xl:mt-[10px] xs:text-xs 2xl:text-xl w-full h-full  p-4 2xl:p-[100px]  "
+    >
       <div>
-      <h1 className="font-bold text-slate-200 md:text-2xl ">
-        {" "}
-        <span className="font-normal text-lime-500">02.</span>Where I,ve Worked
-      </h1>
-      <hr className="border-1 border-slate-500 mt-4" />
+        <h1 className="font-bold text-slate-200 md:text-2xl ">
+          {" "}
+          <span className="font-normal text-lime-500">02.</span>Where I,ve
+          Worked
+        </h1>
+        <hr className="border-1 border-slate-500 mt-4" />
 
-      <div className=" mt-4 ">
-        <div className="flex xs:flex xs:flex-col md:flex-row gap-4 2xl:gap-[100px] text-slate-400">
-          <motion.div 
-               initial={{ opacity: 0, scale: 0 }}
-               animate={{ opacity: 1 }}
-               transition={{ duration: 2}}
-               whileInView={{opacity: 1, scale: 1, x: 0}}
-               viewport={{once: true}}
-          className="gap-9 xs:flex xs:flex-row md:flex md:flex-col ">
-            <div
-              onClick={() => action(1)}
-              className={`${
-                tabstate === 1
-                  ? "border-l-2 border-l-lime-500 xs:border-b-lime-500   bg-slate-900 text-lime-500 cursor-pointer p-2"
-                  : " p-2  hover:bg-slate-900 text-slate-500 cursor-pointer"
-              }`}
+        <div className=" mt-4 ">
+          <div className="flex xs:flex xs:flex-col md:flex-row gap-4 2xl:gap-[100px] text-slate-400">
+            <motion.div
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 2 }}
+              whileInView={{ opacity: 1, scale: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="gap-9 xs:flex xs:flex-row md:flex md:flex-col "
             >
-              Side Hustle
-            </div>
-            <div
-              onClick={() => action(2)}
-              className={`${
-                tabstate === 2
-                  ? "border-l-2 border-l-lime-500 xs:border-b-lime-500 bg-slate-900 text-lime-500 cursor-pointer p-2"
-                  : " p-2  hover:bg-slate-900 text-slate-500 cursor-pointer"
-              }`}
+              <div
+                onClick={() => action(1)}
+                className={`${
+                  tabstate === 1
+                    ? "border-l-2 border-l-lime-500 xs:border-b-lime-500   bg-slate-900 text-lime-500 cursor-pointer p-2"
+                    : " p-2  hover:bg-slate-900 text-slate-500 cursor-pointer"
+                }`}
+              >
+                Side Hustle
+              </div>
+              <div
+                onClick={() => action(2)}
+                className={`${
+                  tabstate === 2
+                    ? "border-l-2 border-l-lime-500 xs:border-b-lime-500 bg-slate-900 text-lime-500 cursor-pointer p-2"
+                    : " p-2  hover:bg-slate-900 text-slate-500 cursor-pointer"
+                }`}
+              >
+                Appen
+              </div>
+              <div
+                onClick={() => action(3)}
+                className={`${
+                  tabstate === 3
+                    ? "border-l-2 border-l-lime-500 xs:border-b-lime-500  bg-slate-900 text-lime-500 cursor-pointer p-2"
+                    : " p-2  hover:bg-slate-900 text-slate-500 cursor-pointer "
+                }`}
+              >
+                ALX Africa
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scaleX: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 2, type: "spring", stiffness: 120 }}
+              whileInView={{ opacity: 1, scaleX: 1 }}
+              viewport={{ once: true }}
+              className={`${tabstate === 1 ? "text-white" : "hidden"}`}
             >
-              Appen
-            </div>
-            <div
-              onClick={() => action(3)}
-              className={`${
-                tabstate === 3
-                  ? "border-l-2 border-l-lime-500 xs:border-b-lime-500  bg-slate-900 text-lime-500 cursor-pointer p-2"
-                  : " p-2  hover:bg-slate-900 text-slate-500 cursor-pointer "
-              }`}
-            >
-              ALX Africa 
-            </div>
-          </motion.div>
-          <motion.div 
-               initial={{ opacity: 0, scaleX:0 }}
-               animate={{ opacity: 1}}
-               transition={{ duration: 2, type: "spring", stiffness: 120}}
-               whileInView={{opacity: 1, scaleX: 1 }}
-               viewport={{once: true}}
-          className={`${tabstate === 1 ? "text-white" : "hidden"}`}>
-            <div>
-              <h1 className="text-white font-medium">
-                React Developer Intern @{" "}
-                <span className="text-lime-500">SideHustle</span>
-              </h1>
-              <p className="text-md text-slate-400">
-                August 2022 - October 2022
-              </p>
-              {works.map((work) => (
-                <li className="text-white text-md">{work.title}</li>
-              ))}
-            </div>
-          </motion.div>
+              <div>
+                <h1 className="text-white font-medium">
+                  React Developer Intern @{" "}
+                  <span className="text-lime-500">SideHustle</span>
+                </h1>
+                <p className="text-md text-slate-400">
+                  August 2022 - October 2022
+                </p>
+                {works.map((work) => (
+                  <li className="text-white text-md">{work.title}</li>
+                ))}
+              </div>
+            </motion.div>
 
-          <motion.div
-          initial={{ opacity: 0, scaleX:0 }}
-          animate={{ opacity: 1}}
-          transition={{ duration: 3, type: "spring", stiffness: 120}}
-          whileInView={{opacity: 1, scaleX: 1 }}
-          viewport={{once: true}}
-          className={`${tabstate === 2 ? "text-white" : "hidden"}`}>
-            <div>
-              <h1 className="text-white font-medium">
-                Data Collector @ <span className="text-lime-500">Appen</span>
-              </h1>
-              <p className="text-md text-slate-400">June 2022 - Present</p>
-              {Appen.map((work) => (
-                <li className="text-white 2xl:text-lg">{work.title}</li>
-              ))}
-            </div>
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scaleX: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 3, type: "spring", stiffness: 120 }}
+              whileInView={{ opacity: 1, scaleX: 1 }}
+              viewport={{ once: true }}
+              className={`${tabstate === 2 ? "text-white" : "hidden"}`}
+            >
+              <div>
+                <h1 className="text-white font-medium">
+                  Data Collector @ <span className="text-lime-500">Appen</span>
+                </h1>
+                <p className="text-md text-slate-400">June 2022 - Present</p>
+                {Appen.map((work) => (
+                  <li className="text-white 2xl:text-lg">{work.title}</li>
+                ))}
+              </div>
+            </motion.div>
 
-          <motion.div 
-          initial={{ opacity: 0, scaleX:0 }}
-          animate={{ opacity: 1}}
-          transition={{ duration: 3, type: "spring", stiffness: 120}}
-          whileInView={{opacity: 1, scaleX: 1 }}
-          viewport={{once: true}}
-          className={`${tabstate === 3 ? "text-white" : "hidden"}`}>
-            <div>
-              <h1 className="text-white font-medium">
-                Intern @ <span className="text-lime-500">ALX Africa</span>
-              </h1>
-              <p className="text-md text-slate-400">April 2022 - September 2022</p>
-              {ALX.map((work) => (
-                <li className="text-white text-md">{work.title}</li>
-              ))}
-            </div>
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scaleX: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 3, type: "spring", stiffness: 120 }}
+              whileInView={{ opacity: 1, scaleX: 1 }}
+              viewport={{ once: true }}
+              className={`${tabstate === 3 ? "text-white" : "hidden"}`}
+            >
+              <div>
+                <h1 className="text-white font-medium">
+                  Intern @ <span className="text-lime-500">ALX Africa</span>
+                </h1>
+                <p className="text-md text-slate-400">
+                  April 2022 - September 2022
+                </p>
+                {ALX.map((work) => (
+                  <li className="text-white text-md">{work.title}</li>
+                ))}
+              </div>
+            </motion.div>
+          </div>
         </div>
-      </div>
       </div>
     </div>
   );

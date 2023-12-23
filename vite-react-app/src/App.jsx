@@ -20,7 +20,7 @@ function App() {
   return (
     <div>
       {loading ? (
-        <div className="md:w-screen md:h-screen bg-sky-950 font-sans xs:h-screen xs:h-screen flex justify-center items-center ">
+        <div className="md:w-screen md:h-screen bg-slate-950 font-sans xs:h-screen xs:h-screen flex justify-center items-center ">
           <PropagateLoader
             color={"#00e600"}
             loading={loading}
@@ -30,12 +30,13 @@ function App() {
           />
         </div>
       ) : (
-        <div className="md:w-full md:h-full bg-sky-950 font-sans xs:w-full xs:h-full">
+        <div className="md:w-full md:h-full bg-gray-300  font-sans xs:w-full xs:h-full">
           <Navbar />
           <About />
           <Info />
-          <Work />
           <Built />
+          <Work />
+          
           <NoteWorthy />
         </div>
       )}
