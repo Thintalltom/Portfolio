@@ -1,7 +1,7 @@
 import React from "react";
 import profile from "../../profile.jpg";
 import { FaCheck } from "react-icons/fa";
-import { DiJsBadge, DiCss3,  DiReact, DiSublime, DiVim } from "react-icons/di";
+import { DiJsBadge, DiCss3,  DiReact, DiSublime } from "react-icons/di";
 import { motion } from "framer-motion";
 const Info = () => {
   return (
@@ -11,12 +11,12 @@ const Info = () => {
     >
       <div>
         <div className="flex justify-center ">
-          <p className="lg:text-[90px] xs:text-lg mt-[50px]  font-bold tracking-[2rem] text-zinc-400">
+          <p className="lg:text-[90px] xs:text-lg mt-[50px]  font-bold lg:tracking-[2rem] sm:tracking-[1rem] text-zinc-400">
             About me
           </p>
         </div>
 
-        <div className="lg:flex lg:gap-4 lg:flex-row-reverse lg:justify-around xs:flex xs:flex-col md:mt-[30px] sm:mt-[30px]">
+        <div className="lg:flex lg:gap-4 bg-red-500 lg:flex-row-reverse lg:justify-around xs:flex xs:flex-col md:mt-[30px] sm:mt-[30px]">
           <motion.div
             initial={{ opacity: 0, scale: 0, x: 100 }}
             animate={{ opacity: 1 }}
@@ -25,7 +25,7 @@ const Info = () => {
             viewport={{ once: true }}
           >
             <p className="text-zinc-700">About Me</p>
-            <motion.p className="mt-4 xs:text-sm text-slate-950 font-light lg:text-lg md:text-2xl xs:text-xs sm:text-2xl">
+            <motion.p className="mt-4 xs:text-sm text-slate-950 font-light lg:text-lg md:text-2xl xs:text-xs sm:text-sm">
               Hello My name is Tomide, I started web development in 2021.
               <br /> I bring a fresh perspective to the field, coupled with a
               passion for innovation <br /> and problem-solving. one of my
@@ -54,7 +54,7 @@ const Info = () => {
             </motion.div>
           </div>
         </div>
-        <div className="flex gap-6 mt-[30px] justify-around">  
+        <div className="lg:flex lg:flex-row sm:flex-col gap-6 mt-[30px] justify-around">  
             <div>
               <p className="font-bold text-slate-700 text-2xl">Tools I use</p>
               <p className="font-light"> Here are some awesome tools i use to make development and <br /> problem 

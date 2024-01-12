@@ -2,6 +2,7 @@ import React from "react";
 import Book from "../../assets/BookApp.jpg";
 import Transact from "../../assets/TransactApp.jpg";
 import NFT from "../../assets/NFT.jpg";
+import Project from  "../../assets/project1.jpg";
 import { FaGithub, FaLink } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -9,47 +10,29 @@ const Built = () => {
   return (
     <div
       name="work"
-      className="mt-[-5px] 2xl:mt-[-50px]  xs:text-xs w-full h-full  p-4 2xl:p-[100px] "
+      className="mt-[50px] 2xl:mt-[-50px]  xs:text-xs w-full h-full  p-4 2xl:p-[100px] "
     >
       <div>
-        <h1 className="font-medium text-white text-2xl xs:text-sm md:text-xl  lg:text-2xl">
-          {" "}
-          <span className="text-lime-500 text-2xl xs:text-sm md:text-xl">
-            03.
-          </span>
-          Some Things I've Built
-        </h1>
-        <hr className="border-1 border-slate-500 mt-4" />
+        <p className=" text-center  text-3xl  font-bold text-slae-450">Recent Projects</p>
       </div>
 
-      <div className="mt-4 md:flex md:justify-center sm:justify-center ">
+      <div className="mt-4 md:flex md:justify-center sm:justify-center mt-[100px] ">
         <div className="md:flex md:flex-col md:justify-center sm:justify-center  ">
-          <div className="lg:flex lg:flex-row cursor-pointer xs:flex xs:flex-col md:justify-items-stretch xs:hidden sm:hidden md:hidden ">
+          <div className="lg:flex lg:flex-row cursor-pointer xs:flex xs:flex-col md:justify-items-stretch xs:hidden sm:hidden md:hidden gap-[30px] ">
             <img
-              src={Book}
+              src={Project}
               className="w-[600px] h-[400px] xs:hidden sm:hidden lg:block 2xl:block xl:block"
             />
             <div className="z-10">
-              <h1 className="text-white xs:text-xs text-right">
-                Book Web Application
+              <p className="font-bold">Project 1</p>
+              <h1 className="text-slate-500 xs:text-xs font-bold ">
+                E-commerce Website
               </h1>
-              <div className="w-[500px] lg:w-[300px] sm:ml-[5px] xs:ml-[5px] xs:text-xs md:ml-[-5px] xs:w-full sm:w-full  text-right  md:w-[600px] mt-4 mx-[-25px] drop-shadow-lg h-[150px] p-4 bg-sky-200 md:mt-[20px]">
+              <div className=" lg:w-[500px] sm:ml-[5px] xs:ml-[5px] xs:text-xs md:ml-[-5px] xs:w-full sm:w-full    md:w-[600px] mt-4 mx-[-25px] drop-shadow-lg h-[150px] p-4  md:mt-[20px]">
                 <p>
-                  A web Application that allows users to read books on different
-                  genres, Bookmark books and also create a copy of their own
-                  book
+                  Created a web application that allows users to be able to buy products utilizing an external api called FAKESTORE Api, which allows users to order for items and pay for the items ordered for 
+                . Also incorporated the use of FLUTTERWAVE API as the payment gateway
                 </p>
-              </div>
-              <div className="flex justify-between sm:justify-center sm:justify-between xs:text-xs mt-4 ml-2 xs:ml-0 text-lime-500 md:ml-0">
-                <p>React</p>
-                <p>Nodejs </p>
-                <p>MySQL</p>
-                <p>ExpressJs</p>
-              </div>
-
-              <div className="mt-4 ml-4 text-2xl justify-between flex ">
-                <FaGithub className="text-white hover:text-lime-500 xs:text-xs" />
-                <FaLink className="text-white hover:text-lime-500 xs:text-xs" />
               </div>
             </div>
           </div>

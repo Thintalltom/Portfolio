@@ -15,7 +15,7 @@ const Navbar = () => {
     setOpen(true);
   };
   return (
-    <div className="h-[70px] bg-slate-950   items-center justify-between p-4 flex font-sans">
+    <div className="h-[70px] items-center justify-between p-4 flex font-sans">
       <div>
         <img src={Logo} alt="logoimage" className="w-[100px] cursor-pointer" />
       </div>
