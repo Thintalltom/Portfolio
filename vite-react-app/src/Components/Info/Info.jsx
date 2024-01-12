@@ -11,7 +11,7 @@ const Info = () => {
     >
       <div>
         <div className="flex justify-center ">
-          <p className="lg:text-[100px] xs:text-lg  font-bold tracking-[2rem] text-slate-400">
+          <p className="lg:text-[90px] xs:text-lg mt-[50px]  font-bold tracking-[2rem] text-zinc-400">
             About me
           </p>
         </div>
@@ -24,6 +24,7 @@ const Info = () => {
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
             viewport={{ once: true }}
           >
+            <p className="text-zinc-700">About Me</p>
             <motion.p className="mt-4 xs:text-sm text-slate-950 font-light lg:text-lg md:text-2xl xs:text-xs sm:text-2xl">
               Hello My name is Tomide, I started web development in 2021.
               <br /> I bring a fresh perspective to the field, coupled with a
