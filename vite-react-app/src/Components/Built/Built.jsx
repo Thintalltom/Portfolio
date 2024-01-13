@@ -23,7 +23,7 @@ const Built = () => {
           <div className="lg:flex lg:flex-row xs:flex-col sm:flex-col md:flex-row justify-around  p-4 gap-[20px] ">
             <img
               src={Project}
-              className=" rounded-[10px] w-[400px] h-[300px] "
+              className=" rounded-[10px] lg:w-[400px] h-[300px] sm:w-[300px] xs:w-[300px] "
             />
             <div className="w-[400px]">
               <p className="font-bold">Project 1</p>

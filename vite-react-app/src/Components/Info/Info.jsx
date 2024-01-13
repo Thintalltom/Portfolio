@@ -11,7 +11,7 @@ const Info = () => {
     >
       <div>
         <div className="flex justify-center ">
-          <p className="lg:text-[90px] xs:text-lg mt-[50px]  font-bold lg:tracking-[2rem] sm:tracking-[1rem] text-zinc-400">
+          <p className="lg:text-[90px] xs:text-lg mt-[50px]  font-bold lg:tracking-[2rem] xs:tracking-[1rem] sm:tracking-[1rem] text-zinc-400">
             About me
           </p>
         </div>
@@ -56,8 +56,8 @@ const Info = () => {
         </div>
         <div className="lg:flex lg:flex-row sm:flex-col gap-6 mt-[30px] justify-around">  
             <div>
-              <p className="font-bold text-slate-700 text-2xl">Tools I use</p>
-              <p className="font-light"> Here are some awesome tools i use to make development and <br /> problem 
+              <p className="font-bold text-slate-700 lg:text-2xl xs:text-xs sm:text-sm">Tools I use</p>
+              <p className="font-light lg:text-sm xs:text-xs sm:text-sm"> Here are some awesome tools i use to make development and <br /> problem 
                 solving easier and faster for my user</p>
             </div>
             <div className="grid grid-cols-2 gap-[60px]">

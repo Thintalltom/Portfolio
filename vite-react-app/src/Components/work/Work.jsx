@@ -47,32 +47,30 @@ const Work = () => {
   return (
     <div
       name="experience"
-      className="mt-[100px] xs:mt-[-8px]  2xl:mt-[10px] xs:text-xs 2xl:text-xl w-full h-full  p-4 2xl:p-[100px]  "
+      className="mt-[30px]  xs:text-xs 2xl:text-xl w-full h-full  p-4 2xl:p-[100px]  "
     >
       <div>
-        <h1 className="font-bold text-slate-200 md:text-2xl ">
-          {" "}
-          <span className="font-normal text-lime-500">02.</span>Where I,ve
-          Worked
+        <h1 className=" text-center font-bold text-zinc-950 md:text-2xl ">
+          Experience
         </h1>
-        <hr className="border-1 border-slate-500 mt-4" />
+       
 
-        <div className=" mt-4 ">
-          <div className="flex xs:flex xs:flex-col md:flex-row gap-4 2xl:gap-[100px] text-slate-400">
+        <div className=" mt-[20px] p-4 ">
+          <div className="flex xs:flex-col sm:flex-col lg:flex-row  gap-4 2xl:gap-[100px] text-slate-400">
             <motion.div
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 2 }}
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
               viewport={{ once: true }}
-              className="gap-9 xs:flex xs:flex-row md:flex md:flex-col "
+              className="gap-9 xs:flex xs:flex-row  md:flex md:flex-col "
             >
               <div
                 onClick={() => action(1)}
                 className={`${
                   tabstate === 1
-                    ? "border-l-2 border-l-lime-500 xs:border-b-lime-500   bg-slate-900 text-lime-500 cursor-pointer p-2"
-                    : " p-2  hover:bg-slate-900 text-slate-500 cursor-pointer"
+                    ? "border-l-2   bg-slate-900 text-white  font-thin cursor-pointer p-2 rounded-sm"
+                    : " p-2  hover:bg-slate-900 text-zinc-950 hover:text-white font-thin cursor-pointer"
                 }`}
               >
                 Side Hustle
@@ -81,8 +79,8 @@ const Work = () => {
                 onClick={() => action(2)}
                 className={`${
                   tabstate === 2
-                    ? "border-l-2 border-l-lime-500 xs:border-b-lime-500 bg-slate-900 text-lime-500 cursor-pointer p-2"
-                    : " p-2  hover:bg-slate-900 text-slate-500 cursor-pointer"
+                  ? "border-l-2   bg-slate-900 text-white font-thin cursor-pointer p-2 rounded-sm"
+                  : " p-2  hover:bg-slate-900 text-zinc-950 hover:text-white  font-thin cursor-pointer"
                 }`}
               >
                 Appen
@@ -91,8 +89,8 @@ const Work = () => {
                 onClick={() => action(3)}
                 className={`${
                   tabstate === 3
-                    ? "border-l-2 border-l-lime-500 xs:border-b-lime-500  bg-slate-900 text-lime-500 cursor-pointer p-2"
-                    : " p-2  hover:bg-slate-900 text-slate-500 cursor-pointer "
+                  ? "border-l-2   bg-slate-900 text-white font-thin cursor-pointer p-2 rounded-sm"
+                  : " p-2  hover:bg-slate-900 text-zinc-950 font-thin hover:text-white cursor-pointer"
                 }`}
               >
                 ALX Africa
@@ -107,15 +105,14 @@ const Work = () => {
               className={`${tabstate === 1 ? "text-white" : "hidden"}`}
             >
               <div>
-                <h1 className="text-white font-medium">
-                  React Developer Intern @{" "}
-                  <span className="text-lime-500">SideHustle</span>
+                <h1 className="text-white text-zinc-950 font-light">
+                  React Developer Intern @<span className="text-zinc-950 font-bold">Sidehustle</span>
                 </h1>
-                <p className="text-md text-slate-400">
+                <p className="text-md text-zinc-950 font-light">
                   August 2022 - October 2022
                 </p>
                 {works.map((work) => (
-                  <li className="text-white text-md">{work.title}</li>
+                  <li className="text-zinc-950 font-light">{work.title}</li>
                 ))}
               </div>
             </motion.div>
@@ -129,12 +126,12 @@ const Work = () => {
               className={`${tabstate === 2 ? "text-white" : "hidden"}`}
             >
               <div>
-                <h1 className="text-white font-medium">
-                  Data Collector @ <span className="text-lime-500">Appen</span>
+                <h1 className="text-zinc-950 font-light">
+                  Data Collector @<span className="text-zinc-950 font-bold">Appen</span>
                 </h1>
-                <p className="text-md text-slate-400">June 2022 - Present</p>
+                <p className="text-zinc-950 font-light">June 2022 - Present</p>
                 {Appen.map((work) => (
-                  <li className="text-white 2xl:text-lg">{work.title}</li>
+                  <li className="text-zinc-950 font-light">{work.title}</li>
                 ))}
               </div>
             </motion.div>
@@ -148,14 +145,14 @@ const Work = () => {
               className={`${tabstate === 3 ? "text-white" : "hidden"}`}
             >
               <div>
-                <h1 className="text-white font-medium">
-                  Intern @ <span className="text-lime-500">ALX Africa</span>
+                <h1 className="text-zinc-950 font-light">
+                  Intern @ <span className="text-zinc-950 font-bold">ALX Africa</span>
                 </h1>
                 <p className="text-md text-slate-400">
                   April 2022 - September 2022
                 </p>
                 {ALX.map((work) => (
-                  <li className="text-white text-md">{work.title}</li>
+                  <li className="text-white text-md text-zinc-950 font-light">{work.title}</li>
                 ))}
               </div>
             </motion.div>
