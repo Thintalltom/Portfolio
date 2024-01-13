@@ -16,7 +16,7 @@ const Info = () => {
           </p>
         </div>
 
-        <div className="lg:flex lg:gap-4 bg-red-500 lg:flex-row-reverse lg:justify-around xs:flex xs:flex-col md:mt-[30px] sm:mt-[30px]">
+        <div className="lg:flex lg:gap-4 lg:flex-row-reverse lg:justify-around xs:flex xs:flex-col md:mt-[30px] sm:mt-[30px]">
           <motion.div
             initial={{ opacity: 0, scale: 0, x: 100 }}
             animate={{ opacity: 1 }}
