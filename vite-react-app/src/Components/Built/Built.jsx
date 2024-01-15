@@ -20,11 +20,12 @@ const Built = () => {
 
       <div className="mt-4  mt-[30px] ">
         <div className="flex flex-col justify-around  gap-[40px] ">
-          <div className="lg:flex lg:flex-row xs:flex-col sm:flex-col md:flex-row justify-around  p-4 gap-[20px] ">
-            <img
+          <div className="lg:flex lg:flex-row xs:flex-col sm:flex-col md:flex-row justify-center  p-4 gap-[20px] ">
+        <a  href="http://ecom-umber-delta.vercel.app/">  <img
               src={Project}
-              className=" rounded-[10px] lg:w-[400px] h-[300px] sm:w-[300px] xs:w-[300px] "
+              className=" rounded-[10px] lg:w-[400px] h-[300px] sm:w-[300px] xs:w-[300px] cursor-pointer "
             />
+            </a>
             <div className="w-[400px]">
               <p className="text-zinc-950 text-sm font-medium">Project 1</p>
               <h1 className="text-zinc-950 text-sm font-medium">
@@ -42,11 +43,14 @@ const Built = () => {
             </div>
           </div>
 
-          <div className="lg:flex lg:flex-row-reverse xs:flex-col sm:flex-col md:flex-row justify-around  p-4 gap-[20px] ">
+          <div className="lg:flex lg:flex-row-reverse xs:flex-col sm:flex-col md:flex-row justify-center  p-4 gap-[20px] ">
+            <a href="http://afrihack-project.vercel.app/">
             <img
               src={agrisage}
-              className=" rounded-[10px] lg:w-[400px] h-[300px] sm:w-[300px] xs:w-[300px] "
+              className=" rounded-[10px] lg:w-[400px] h-[300px] sm:w-[300px] xs:w-[300px] cursor-pointer "
             />
+            </a>
+           
             <div className="w-[400px]">
               <p className="text-zinc-950 text-sm font-medium">Project 2</p>
               <h1 className="text-zinc-950 text-sm font-medium">
@@ -63,11 +67,13 @@ const Built = () => {
             </div>
           </div>
 
-          <div className="lg:flex lg:flex-row xs:flex-col sm:flex-col md:flex-row justify-around  p-4 gap-[20px] ">
+          <div className="lg:flex lg:flex-row xs:flex-col sm:flex-col md:flex-row justify-center  p-4 gap-[20px] ">
+          <a href="https://aina-portfolio.vercel.app/">
             <img
               src={aina}
               className=" rounded-[10px] lg:w-[400px] h-[300px] sm:w-[300px] xs:w-[300px] "
             />
+            </a>
             <div className="w-[400px]">
               <p className="text-zinc-950 text-sm font-medium">Project 3</p>
               <h1 className="text-zinc-950 text-sm font-medium ">

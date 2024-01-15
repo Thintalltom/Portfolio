@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div className="h-[70px] items-center bg-zinc-950 justify-between p-4 flex  fixed w-[100vw]">
       <div>
-        <img src={Logo} alt="logoimage" className="w-[100px] cursor-pointer" />
+        <p className="text-white text-2xl">tofG</p>
       </div>
       {/*menu */}
       <div className="lg:flex hidden text-white">

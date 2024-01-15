@@ -11,7 +11,7 @@ const Info = () => {
         <p className="text-center mt-[20px]  text-3xl font-medium text-xl text-zinc-950 ">About me</p>
        
 
-        <div className="lg:flex lg:gap-4 lg:flex-row-reverse lg:justify-around xs:flex xs:flex-col md:mt-[30px] sm:mt-[30px]">
+        <div className="lg:flex lg:gap-4 lg:flex-row-reverse lg:justify-center xs:flex xs:flex-col md:mt-[30px] sm:mt-[30px]">
           <motion.div
             initial={{ opacity: 0, scale: 0, x: 100 }}
             animate={{ opacity: 1 }}
@@ -29,9 +29,7 @@ const Info = () => {
               Ultimately, my goal as a software developer is to create <br />{" "}
               impactful and innovative solutions that enhances peoples lives
             </motion.p>
-            <button className="border-zinc-950 border-[0.5px] shadow-md w-[300px] mt-[10px] p-4 font-light text-zinc-950">
-              2 years in the game
-            </button>
+           
           </motion.div>
           <div className="md:justify-center">
             <motion.div
@@ -50,12 +48,7 @@ const Info = () => {
           </div>
         </div>
         <div className="lg:flex lg:flex-row sm:flex-col gap-6 mt-[30px] justify-around">  
-            <div>
-              <p className="font-medium text-zinc-950 text-xl ">Tools I use</p>
-              <p className="font-light lg:text-sm xs:text-xs sm:text-sm"> Here are some awesome tools i use to make development and <br /> problem 
-                solving easier and faster for my user</p>
-            </div>
-            <div className="grid grid-cols-2 gap-[60px]">
+            <div className="flex xs:flex-col sm:flex-col lg:flex-row  gap-[60px]">
               <div className="text-center flex gap-[6px] items-center">
                 <DiJsBadge className="text-4xl" /> 
                 
