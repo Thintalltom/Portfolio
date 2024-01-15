@@ -50,7 +50,7 @@ const NoteWorthy = () => {
           </button>
         </form>
 
-        <div className="hidden lg:flex  lg:justify-center lg:mt-9 lg:gap-9 sm:flex  xs:text-xs sm:justify-center sm:mt-9 sm:gap-9 md:flex  md:justify-center md:mt-9 md:gap-9 xs:flex  xs:justify-center xs:mt-9 xs:gap-9 2xl:hidden  lg:block md:block sm:block xs:block ">
+        <div className="hidden lg:flex  lg:justify-center lg:mt-9 lg:gap-9 sm:flex mt-[20px]  xs:text-xs sm:justify-center sm:mt-9 sm:gap-9 md:flex  md:justify-center md:mt-9 md:gap-9 xs:flex  xs:justify-center xs:mt-9 xs:gap-9 2xl:hidden  lg:block md:block sm:block xs:block ">
           <a href="https://twitter.com/tomideofGod">
             <BsTwitter className="text-2xl text-white cursor-pointer  xs:text-2xl" />
           </a>

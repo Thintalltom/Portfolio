@@ -1,5 +1,6 @@
 import Profile from '../../assets/profile.jpg'
 import { DiJsBadge, DiCss3,  DiReact, DiSublime } from "react-icons/di";
+import { FaHtml5 } from "react-icons/fa";
 import { motion } from "framer-motion";
 const Info = () => {
   return (
@@ -48,7 +49,7 @@ const Info = () => {
           </div>
         </div>
         <div className="lg:flex lg:flex-row sm:flex-col gap-6 mt-[30px] justify-around">  
-            <div className="flex xs:flex-col sm:flex-col lg:flex-row  gap-[60px]">
+            <div className="grid  gap-[60px] lg:grid-cols-5  xs:grid-cols-2 ">
               <div className="text-center flex gap-[6px] items-center">
                 <DiJsBadge className="text-4xl" /> 
                 
@@ -65,6 +66,9 @@ const Info = () => {
                     <div className="text-center flex gap-[2px] items-center ">
                     <DiSublime className="text-4xl"  />
                     <p className='text-xs'>  Sanity</p></div>
+                    <div className="text-center flex gap-[2px] items-center ">
+                    <FaHtml5 className="text-4xl"  />
+                    <p className='text-xs'>  HTML</p></div>
             </div>
 
             </div>
