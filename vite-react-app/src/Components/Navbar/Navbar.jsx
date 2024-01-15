@@ -15,31 +15,31 @@ const Navbar = () => {
     setOpen(true);
   };
   return (
-    <div className="h-[70px] items-center bg-slate-950 justify-between p-4 flex font-sans">
+    <div className="h-[70px] items-center bg-zinc-950 justify-between p-4 flex  fixed w-[100vw]">
       <div>
         <img src={Logo} alt="logoimage" className="w-[100px] cursor-pointer" />
       </div>
       {/*menu */}
       <div className="lg:flex hidden text-white">
-        <li className="list-none px-4 cursor-pointer  font-light text-lg">
-          <Link to="work" smooth={true} duration={500}>
-            Work
-          </Link>
-        </li>
-
-        <li className="list-none px-4 cursor-pointer font-light text-lg">
-          <Link to="experience" smooth={true} duration={500}>
-            Experience
-          </Link>{" "}
-        </li>
-
-        <li className="list-none px-4 cursor-pointer font-light text-lg">
+        <li className="list-none px-4 cursor-pointer  font-light text-sm">
           <Link to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
 
-        <li className="list-none px-4 cursor-pointer  font-light text-lg">
+        <li className="list-none px-4 cursor-pointer font-light text-sm">
+          <Link to="work" smooth={true} duration={500}>
+            Project
+          </Link>{" "}
+        </li>
+
+        <li className="list-none px-4 cursor-pointer font-light text-sm">
+          <Link to="experience" smooth={true} duration={500}>
+            Experience
+          </Link>
+        </li>
+
+        <li className="list-none px-4 cursor-pointer  font-light text-sm">
           <Link to="contact" smooth={true} duration={500}>
             Contact
           </Link>

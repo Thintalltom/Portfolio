@@ -1,0 +1,5 @@
+.clipImg
+{
+    clip-path: circle();
+    width: 200px !important;
+}

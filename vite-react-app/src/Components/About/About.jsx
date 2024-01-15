@@ -1,10 +1,10 @@
 import React from "react";
-import { BsTwitter, BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
+
 
 import { motion } from "framer-motion";
 const About = () => {
   return (
-    <div  className=" bg-slate-950  h-[40rem] flex items-center p-[30px]">
+    <div  className=" bg-zinc-950  h-[40rem] flex items-center p-[30px]">
 
       <div className="md:justify-center   md:mt-16 sm:justify-center 2xl:ml-[-40px] xs:ml-[-24px] md:p-[40px] sm:p-[40px] xs:p-[40px] sm:mt-[5px]">
         <p className="text-white lg:text-6xl xs:text-4xl ">HI, </p>
