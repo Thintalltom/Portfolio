@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Logo from "../../logo.png";
 import { CiMenuFries, CiCircleRemove } from "react-icons/ci";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
@@ -52,9 +51,9 @@ const Navbar = () => {
         onClick={handleClick}
       >
         {open ? (
-          <CiMenuFries className="text-cyan-800 text-3xl font-light" />
+          <CiMenuFries className="text-white text-3xl font-extrabold" />
         ) : (
-          <CiCircleRemove className="text-cyan-800 text-3xl font-light" />
+          <CiCircleRemove className="text-white text-3xl font-extrabold" />
         )}
       </motion.div>
 

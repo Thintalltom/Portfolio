@@ -20,8 +20,8 @@ const Built = () => {
 
       <div className="mt-4  mt-[30px] ">
         <div className="flex flex-col justify-around  gap-[40px] ">
-          <div className="lg:flex lg:flex-row xs:flex-col sm:flex-col md:flex-row justify-center  p-4 gap-[20px] ">
-        <a  href="http://ecom-umber-delta.vercel.app/" target="_blank">  <img
+          <div className="lg:flex lg:flex-row xs:flex-col sm:flex-col sm:gap-[40px] md:flex-row justify-center  p-4 gap-[20px] ">
+        <a  href="http://ecom-umber-delta.vercel.app/" target="_blank" rel="noopener noreferrer">  <img
               src={Project}
               className=" rounded-[10px] lg:w-[400px] h-[300px] sm:w-[300px] xs:w-[300px] cursor-pointer "
             />
@@ -32,10 +32,10 @@ const Built = () => {
                 E-Shop
               </h1>
 
-              <p className="text-zinc-950 font-light text-sm">
+              <p className="text-zinc-950 font-light text-sm sm:w-[300px]">
                 Created a web application that allows users to be able to buy
-                products utilizing an external api called FAKESTORE Api, which <br />
-                allows users to order for items and pay for the items ordered  <br />
+                products utilizing an external api called FAKESTORE Api, which 
+                allows users to order for items and pay for the items ordered  
                 for . Also incorporated the use of FLUTTERWAVE API as the
                 payment gateway
               </p>
@@ -44,7 +44,7 @@ const Built = () => {
           </div>
 
           <div className="lg:flex lg:flex-row-reverse xs:flex-col sm:flex-col md:flex-row justify-center  p-4 gap-[20px] ">
-            <a href="http://afrihack-project.vercel.app/" target="_blank">
+            <a href="http://afrihack-project.vercel.app/" target="_blank" rel="noopener noreferrer">
             <img
               src={agrisage}
               className=" rounded-[10px] lg:w-[400px] h-[300px] sm:w-[300px] xs:w-[300px] cursor-pointer "
@@ -57,9 +57,9 @@ const Built = () => {
                 Agrisage
               </h1>
 
-              <p className="text-zinc-950 font-light text-sm">
+              <p className="text-zinc-950 font-light text-sm sm:w-[300px]">
                 Built a AI with a team of developer and designer to help 
-                farmers  <br /> predict the best time to harvest crops by integrating an externally  <br />
+                farmers  predict the best time to harvest crops by integrating an externally 
                  trained dataset to solve a real world problem         
                 
               </p>
@@ -68,7 +68,7 @@ const Built = () => {
           </div>
 
           <div className="lg:flex lg:flex-row xs:flex-col sm:flex-col md:flex-row justify-center  p-4 gap-[20px] ">
-          <a href="https://aina-portfolio.vercel.app/" target="_blank">
+          <a href="https://aina-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">
             <img
               src={aina}
               className=" rounded-[10px] lg:w-[400px] h-[300px] sm:w-[300px] xs:w-[300px] "
