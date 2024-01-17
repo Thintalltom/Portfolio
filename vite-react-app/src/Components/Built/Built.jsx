@@ -34,8 +34,8 @@ const Built = () => {
 
               <p className="text-zinc-950 font-light text-sm">
                 Created a web application that allows users to be able to buy
-                products utilizing an external api called FAKESTORE Api, which
-                allows users to order for items and pay for the items ordered
+                products utilizing an external api called FAKESTORE Api, which <br />
+                allows users to order for items and pay for the items ordered  <br />
                 for . Also incorporated the use of FLUTTERWAVE API as the
                 payment gateway
               </p>
@@ -59,7 +59,7 @@ const Built = () => {
 
               <p className="text-zinc-950 font-light text-sm">
                 Built a AI with a team of developer and designer to help 
-                farmers predict the best time to harvest crops by integrating an externally
+                farmers  <br /> predict the best time to harvest crops by integrating an externally  <br />
                  trained dataset to solve a real world problem         
                 
               </p>
@@ -81,7 +81,7 @@ const Built = () => {
               </h1>
 
               <p className="text-zinc-950 font-light text-sm">
-                Built a personal portfolio for a writer and his publishing organisation
+                Built a personal portfolio for a writer and his  <br /> publishing organisation
               </p>
               <p className="text-zinc-950  text-sm">Reactjs | TailwindCss | Framermotion </p>
             </div>

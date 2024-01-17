@@ -21,9 +21,9 @@ function App() {
   return (
     <div>
       {loading ? (
-        <div className="md:w-screen md:h-screen bg-slate-950 font-sans xs:h-screen xs:h-screen flex justify-center items-center ">
+        <div className="md:w-screen md:h-screen bg-zinc-950 font-sans xs:h-screen xs:h-screen flex justify-center items-center ">
           <PropagateLoader
-            color={"#00e600"}
+            color={"#fffff"}
             loading={loading}
             size={30}
             aria-label="Loading Spinner"

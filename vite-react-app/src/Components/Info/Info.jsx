@@ -48,8 +48,8 @@ const Info = () => {
             </motion.div>
           </div>
         </div>
-        <div className="lg:flex lg:flex-row sm:flex-col gap-6 mt-[30px] justify-around">  
-            <div className="grid  gap-[60px] lg:grid-cols-5  xs:grid-cols-2 ">
+        <div className=" flex justify-around mt-[40px]">  
+            <div className="grid  gap-[60px] lg:grid-cols-2  xs:grid-cols-2 ">
               <div className="text-center flex gap-[6px] items-center">
                 <DiJsBadge className="text-4xl" /> 
                 

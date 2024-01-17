@@ -40,7 +40,7 @@ const About = () => {
             initial={{ x: -250 }}
             animate={{ x: 0 }}
             transition={{ duration: 0.8, type: "spring", stiffness: 120 }}
-            className="border-[0.5px] cursor-pointer hover:bg-slate-500 rounded bg-slate-950 p-2 text-white w-[200px] hover:drop-shadow-xl xs:text-xs sm:mt-[30px] lg:mt-[10px] "
+            className="border-[0.5px] cursor-pointer  rounded bg-zinc-950 border-zinc-500 p-2 text-white w-[200px] hover:drop-shadow-xl xs:text-xs sm:mt-[30px] lg:mt-[10px] "
           >
             DOWNLOAD RESUME
           </motion.button>
