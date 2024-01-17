@@ -1,4 +1,3 @@
-import React from "react";
 import { BsTwitter, BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
 
 const NoteWorthy = () => {

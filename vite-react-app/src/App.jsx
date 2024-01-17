@@ -6,7 +6,7 @@ import Info from "./Components/Info/Info";
 import Work from "./Components/work/Work";
 import Built from "./Components/Built/Built";
 import NoteWorthy from "./Components/Built/NoteWorthy";
-import Testimonial from "./Components/Testimonial/Testimonial";
+
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -23,7 +23,7 @@ function App() {
       {loading ? (
         <div className="md:w-screen md:h-screen bg-zinc-950 font-sans xs:h-screen xs:h-screen flex justify-center items-center ">
           <PropagateLoader
-            color={"#fffff"}
+            color={"#f7fdfc"}
             loading={loading}
             size={30}
             aria-label="Loading Spinner"
