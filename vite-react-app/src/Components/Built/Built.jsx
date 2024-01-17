@@ -32,7 +32,7 @@ const Built = () => {
                 E-Shop
               </h1>
 
-              <p className="text-zinc-950 font-light text-sm sm:w-[300px]">
+              <p className="text-zinc-950 font-light text-sm sm:w-[300px] xs:w-[300px]">
                 Created a web application that allows users to be able to buy
                 products utilizing an external api called FAKESTORE Api, which 
                 allows users to order for items and pay for the items ordered  
@@ -57,7 +57,7 @@ const Built = () => {
                 Agrisage
               </h1>
 
-              <p className="text-zinc-950 font-light text-sm sm:w-[300px]">
+              <p className="text-zinc-950 font-light text-sm sm:w-[300px] xs:w-[300px]">
                 Built a AI with a team of developer and designer to help 
                 farmers  predict the best time to harvest crops by integrating an externally 
                  trained dataset to solve a real world problem         
