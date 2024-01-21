@@ -31,8 +31,8 @@ function App() {
           />
         </div>
       ) : (
-        <div className="md:w-full md:h-full bg-gray-300  font-sans xs:w-full xs:h-full">
-          <Navbar />
+        <div className="md:w-full md:h-full bg-zinc-950  font-sans xs:w-full xs:h-full">
+    
           <About />
           <Info />
           <Built />

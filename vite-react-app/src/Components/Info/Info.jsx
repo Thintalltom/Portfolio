@@ -1,77 +1,77 @@
-import Profile from '../../assets/profile.jpg'
-import { DiJsBadge, DiCss3,  DiReact, DiSublime } from "react-icons/di";
-import { FaHtml5 } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 const Info = () => {
   return (
     <div
       name="about"
-      className="w-full h-full rounded-t-[70px] bg-gray-300   mt-[-60px] p-4 2xl:p-[100px]  "
+      className="w-full h-full bg-zinc-950 text-white xs:mt-[200px]   lg:mt-[100px] p-[50px] 2xl:p-[100px]  "
     >
-      <div>
-        <p className="text-center mt-[20px]  text-3xl font-medium text-xl text-zinc-950 ">About me</p>
-       
+      <div className="flex lg:flex-row md:flex-col xs:flex-col sm:flex-col xs:gap-[80px] lg:gap-[50px] items-center justify-between">
+        <div className="xs:mt-[180px]">
+          <p className="font-bold xs:text-[40px]  lg:text-[50px] bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200">
+            Data
+          </p>
+          <p className="text-sm leading-loose font-light">
+            I am passionate about working with data  <br /> in the
+            meticulous craft of creating and manipulating spreadsheets.
+          </p>
+        </div>
+        <div>
+          <p className="font-bold xs:text-[40px] lg:text-[50px] bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200">
+            Engineering
+          </p>
+          <p className="text-sm leading-loose font-light">
+            I enjoy writing code seemlessly to solve problems in real life
+            scenerio <br />
+            using one of my greatest superpower (JavaScript) - <br /> i am keen
+            on sustainability of code and performance{" "}
+          </p>
+        </div>
+      </div>
 
-        <div className="lg:flex lg:gap-4 lg:flex-row-reverse lg:justify-center xs:flex xs:flex-col md:mt-[30px] sm:mt-[30px]">
-          <motion.div
-            initial={{ opacity: 0, scale: 0, x: 100 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 2 }}
-            whileInView={{ opacity: 1, scale: 1, x: 0 }}
-            viewport={{ once: true }}
-          >
-           
-            <motion.p className="mt-4 xs:text-sm text-zinc-950 font-light lg:text-sm md:text-sm xs:text-xs sm:text-sm">
-              Hello My name is Tomide, I started web development in 2021.
-              <br /> I bring a fresh perspective to the field, coupled with a
-              passion for innovation <br /> and problem-solving. one of my
-              greatest strength as a software developer <br /> is my ability to
-              quickly learn and adapt to new technologies. <br />
-              Ultimately, my goal as a software developer is to create <br />{" "}
-              impactful and innovative solutions that enhances peoples lives
-            </motion.p>
-           
-          </motion.div>
-          <div className="md:justify-center">
-            <motion.div
-              initial={{ opacity: 0, scale: 0, x: 100 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 2 }}
-              whileInView={{ opacity: 1, scale: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="lg:w-[300px] md:ml-16 lg:h-75 border-2 md:ml-4 md:w-[500px] shadow-md sm:w-[400px] border-zinc-950 p-2 lg:mt-[40px] md:mx-[40px] rounded xs:p-1 xs:w-[200px] xs:mt-[80px] xs:mx-auto"
-            >
-              <img
-                src={Profile}
-                className="lg:w-[300px] mt-2 mx-2 rounded md:w-[800px] shadow-md sm:w-[700px] lg:mx-[-20px] lg:mt-[-20px] xs:w-[200px] cursor-pointer hover:bg-lime-500 "
-              />
-            </motion.div>
+      <div className="bg-white h-[30rem] lg:mt-[50px] xs:mt-[200px] ">
+        <div className="mt-[80px] bg-zinc-900 xs:gap-[50px] xs:h-[50rem] lg:h-[30rem] flex lg:flex-row sm:flex-col xs:flex-col justify-around justify-center items-center text-zinc-950">
+          <div>
+            <p className="font-bold xs:text-[20px] lg:text-[40px] bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200">
+              I, build & <br /> provide solution
+            </p>
+            <p className="font-bold mt-[20px] text-md bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200">
+              open source, <br /> hackerathon, web app, <br /> and experimentals
+            </p>
+            <Link to="work" smooth={true}  >
+            <button className="p-[20px]  border-[0.9px] mt-[90px] xs:w-[200px] lg:w-[300px] bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200 font-bold">
+              SEE MY WORKS{" "}
+            </button>
+            </Link>
+          </div>
+
+          <div>
+            <p className="font-bold xs:text-[20px] lg:text-[40px]  bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200">
+              I, Analyse & <br /> provide result
+            </p>
+            <p className="font-bold mt-[20px] text-md bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200">
+              Ms. Excel <br /> Tableau <br /> and SQL
+            </p>
+            <button className="p-[20px]  border-[0.9px] mt-[90px] xs:w-[200px] lg:w-[300px] bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200 font-bold">
+              SEE MY WORKS{" "}
+            </button>
           </div>
         </div>
-        <div className=" flex justify-around mt-[40px]">  
-            <div className="grid  gap-[60px] lg:grid-cols-2  xs:grid-cols-2 ">
-              <div className="text-center flex gap-[6px] items-center">
-                <DiJsBadge className="text-4xl" /> 
-                
-                <p className='text-xs'> javaScript</p>
-                </div> 
-                <div className="text-center flex gap-[2px] items-center">
-                  <DiReact className="text-4xl"  />
-                 <p className='text-xs'>  React</p>
-                 </div> 
-                  <div className="text-center flex gap-[2px] items-center">
-                    <DiCss3 className="text-4xl"  />
-                    <p className='text-xs'>  CSS</p>
-                    </div> 
-                    <div className="text-center flex gap-[2px] items-center ">
-                    <DiSublime className="text-4xl"  />
-                    <p className='text-xs'>  Sanity</p></div>
-                    <div className="text-center flex gap-[2px] items-center ">
-                    <FaHtml5 className="text-4xl"  />
-                    <p className='text-xs'>  HTML</p></div>
-            </div>
+      </div>
 
-            </div>
+      <div className="bg-zinc-900 lg:h-[30rem] sm:h-[40rem] mt-[50px] ">
+        <div className="lg:mt-[80px] xs:mt-[350px]  lg:h-[30rem] xs:h-[50rem] ">
+          <p className="text-center font-bold text-[40px] bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200 p-[40px]">
+            Over the years,
+          </p>
+          <p className="text-white text-center leading-loose bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200 p-[40px]">
+            I have developed websites for personal brands within Nigeria, <br />
+            undertaken a frontend developer internship at SideHustle, and
+            engaged in <br /> various hackathons. <br />
+            Notably, I emerged victorious in the Afrihack competition, <br />
+            collaborating with an AI developer to craft a solution that
+            addresses <br /> specific challenges
+          </p>
+        </div>
       </div>
     </div>
   );
