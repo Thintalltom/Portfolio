@@ -28,8 +28,8 @@ const Info = () => {
         </div>
       </div>
 
-      <div className="bg-white h-[30rem] lg:mt-[50px] xs:mt-[200px] ">
-        <div className="mt-[80px] bg-zinc-900 xs:gap-[50px] xs:h-[50rem] lg:h-[30rem] flex lg:flex-row sm:flex-col xs:flex-col justify-around justify-center items-center text-zinc-950">
+      <div className="bg-white h-[30rem] lg:mt-[50px] xs:mt-[80px] ">
+        <div className="mt-[80px] bg-zinc-900  xs:gap-[50px] xs:h-[50rem] lg:h-[30rem] flex lg:flex-row sm:flex-col xs:flex-col justify-around justify-center items-center text-zinc-950">
           <div>
             <p className="font-bold xs:text-[20px] lg:text-[40px] bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200">
               I, build & <br /> provide solution
@@ -59,14 +59,14 @@ const Info = () => {
       </div>
 
       <div className="bg-zinc-900 lg:h-[30rem] sm:h-[40rem] mt-[50px] ">
-        <div className="lg:mt-[80px] xs:mt-[350px]  lg:h-[30rem] xs:h-[50rem] ">
+        <div className="lg:mt-[80px] xs:mt-[350px]  lg:h-[30rem] xs:h-[30rem] ">
           <p className="text-center font-bold text-[40px] bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200 p-[40px]">
             Over the years,
           </p>
-          <p className="text-white text-center leading-loose bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200 p-[40px]">
-            I have developed websites for personal brands within Nigeria, <br />
+          <p className="text-white text-center leading-loose bg-clip-text font-light text-transparent bg-gradient-to-r from-orange-50 to-blue-200 p-[40px]">
+            I have developed websites for personal brands within Nigeria, 
             undertaken a frontend developer internship at SideHustle, and
-            engaged in <br /> various hackathons. <br />
+            engaged in various hackathons. 
             Notably, I emerged victorious in the Afrihack competition, <br />
             collaborating with an AI developer to craft a solution that
             addresses <br /> specific challenges

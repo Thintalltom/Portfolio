@@ -23,14 +23,14 @@ const Built = () => {
   return (
     <div
       name="work"
-      className="mt-[50px] 2xl:mt-[-50px]  xs:text-xs w-full h-full  p-4 2xl:p-[100px] "
+      className="mt-[50px] 2xl:mt-[-50px] xs:mt-[25px]  xs:text-xs w-full h-full  p-4 2xl:p-[100px] "
     >
       <div>
         
         <div className="grid xs:grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 place-items-center xs:gap-[20px] lg:gap-[0px]">
           {
             works.map((work, index) => (
-              <div key={index} className=" relative w-[300px] bg-zinc-900 h-[300px] p-4 cursor-pointer">
+              <div key={index} className=" relative xs:w-[400px] lg:w-[300px] bg-zinc-900 h-[300px] p-4 cursor-pointer">
                   <p className="font-bold text-lg bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200">{work.title}</p>
                 <p className="leading-loose text-md font-bold mt-[20px] bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200 ">{work.skills}</p>
                 <p className="leading-loose mt-[20px] text-[15px] bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200 text-md">{work.description}</p>
