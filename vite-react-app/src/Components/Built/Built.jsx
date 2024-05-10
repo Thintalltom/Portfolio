@@ -27,7 +27,7 @@ const Built = () => {
     >
       <div>
         
-        <div className="grid xs:grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 place-items-center xs:gap-[20px] lg:gap-[0px]">
+        <div className="grid xs:grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 place-items-center xs:gap-[20px] lg:gap-[8rem]">
           {
             works.map((work, index) => (
               <div key={index} className=" relative xs:w-[300px] lg:w-[300px] bg-zinc-900 h-[300px] p-4 cursor-pointer">
