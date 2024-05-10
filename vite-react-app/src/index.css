@@ -3,6 +3,8 @@ body{
   padding: 0;
   font-family: 'Lato', sans-serif !important;
   color: white !important;
+    scroll-behavior: smooth;
+
 }
 @tailwind base;
 @tailwind components;

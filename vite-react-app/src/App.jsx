@@ -6,7 +6,7 @@ import Info from "./Components/Info/Info";
 import Work from "./Components/work/Work";
 import Built from "./Components/Built/Built";
 import NoteWorthy from "./Components/Built/NoteWorthy";
-
+import ScrollToTopButton from "./Components/ScrollToTopButton";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -37,9 +37,8 @@ function App() {
           <Info />
           <Built />
           <Work />
-         
-          
           <NoteWorthy />
+          <ScrollToTopButton />
         </div>
       )}
     </div>
