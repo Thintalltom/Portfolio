@@ -35,9 +35,9 @@ const Built = () => {
             works.map((work, index) => (
               <div key={index} className="xs:w-[300px] lg:w-[300px] bg-zinc-900 h-[300px] p-[20px] cursor-pointer relative shadow-lg ">
               <div className="">
-                <p className="font-bold text-lg bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200">{work.title}</p>
-                <p className="leading-loose text-md font-bold mt-[20px] bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200 ">{work.skills}</p>
-                <p className="leading-loose mt-[20px] text-[15px] bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200 text-md">{work.description}</p>
+                <p className="font-bold text-lg bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-blue-300">{work.title}</p>
+                <p className="leading-loose text-md font-bold mt-[20px] bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-blue-300 ">{work.skills}</p>
+                <p className="leading-loose mt-[20px] text-[15px] bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-blue-300 text-md">{work.description}</p>
               </div>
               <div className="absolute bottom-0 left-0 right-0  flex justify-between items-center p-[20px]">
               <a href={work.github} target="_blank" rel="noopener noreferrer"><button className="text-bold font-light">CODE</button></a>

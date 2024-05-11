@@ -35,7 +35,7 @@ const ScrollToTopButton = () => {
     <div className="fixed bottom-4 right-4">
       {isVisible && (
         <button onClick={scrollToTop}>
-          <FaArrowCircleUp size={32} color="#555" />
+          <FaArrowCircleUp className='bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-blue-300' size={32} color="#555" />
         </button>
       )}
     </div>

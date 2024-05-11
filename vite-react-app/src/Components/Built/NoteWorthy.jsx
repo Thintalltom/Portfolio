@@ -8,12 +8,13 @@ const NoteWorthy = () => {
     >
       <div>
       <p className="text-center text-center xs:text-2xl lg:text-6xl font-light bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200  mt-[40px]">Wanna Discuss?</p>
-        <p className=" font-thin mt-[20px] xs:text-sm  bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200">
+        <p className=" font-thin mt-[20px] xs:text-sm lg:text-lg  bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-blue-300">
           Although I’m currently looking for any new opportunities, my inbox is
           always open. <br /> Whether you have a question, a gig or just want to say hi, I’ll
           try my best to get back to you!
         </p>
-        <h5 className="font-thin text-zinc-950 mt-4  text-lg">Contact me </h5>
+        
+        <a href="https://drive.google.com/file/d/12Y1zwPnIrlljrb_5JUfaRBCKYBI_KAwo/view?usp=sharing" target="_blank" rel="noopener noreferrer"><button className="bg-zinc-900 p-[10px] mt-[20px] w-[200px] hover:bg-white hover:text-slate-800 text-white text-lg  font-medium">Resume</button></a>  
         
 
         <div className="hidden lg:flex  lg:justify-center lg:mt-9 lg:gap-9 sm:flex mt-[20px]  xs:text-xs sm:justify-center sm:mt-9 sm:gap-9 md:flex  md:justify-center md:mt-9 md:gap-9 xs:flex  xs:justify-center xs:mt-9 xs:gap-9 2xl:hidden  lg:block md:block sm:block xs:block ">

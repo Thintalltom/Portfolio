@@ -1,23 +1,23 @@
-import Profile from "../../assets/profile.jpg";
+import Profile from "../../assets/profile.png";
 const About = () => {
   return (
     <div>
       <div className="bg-zinc-950 h-[30rem]">
         <div className="flex xs:flex-col lg:flex-row sm:flex-col  md:flex-col items-center justify-between p-[50px]">
           <div>
-            <p className="font-bold sm:text-[20px] xs:text-[30px] lg:text-[70px] bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200">
+            <p className="font-bold sm:text-[20px] xs:text-[30px] lg:text-[70px] bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-blue-300">
               Frontend <br /> Developer.
             </p>
-            <p className="text-bold">
+            <p className="text-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-blue-300">
               I like to craft frontend products that meets the needs of users.{" "}
             </p>
-            <a href="https://drive.google.com/file/d/12Y1zwPnIrlljrb_5JUfaRBCKYBI_KAwo/view?usp=sharing" target="_blank" rel="noopener noreferrer"><button className="bg-zinc-800 p-[10px] mt-[20px] w-[200px] hover:bg-white hover:text-slate-800">Resume</button></a>  
+         
             <div className="flex flex-row gap-[30px] mt-[50px]">
-              <p className="sm:text-xs lg:text-sm  leading-loose font-medium  ">
+              <p className="sm:text-xs lg:text-sm  leading-loose font-medium bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-blue-300 ">
                 Highly skilled with solving problems using with code  and <br />
                 working with API's.
               </p>
-              <p className="lg:text-xs xs:text-[10px] font-medium  leading-loose  ">
+              <p className="bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-blue-300 lg:text-xs xs:text-[10px] font-medium  leading-loose  ">
                 With over a year experience <br />  building products for users.
               </p>
             </div>
