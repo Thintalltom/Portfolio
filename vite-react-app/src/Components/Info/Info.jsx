@@ -6,7 +6,7 @@ const Info = () => {
       className="w-full h-full  text-white xs:mt-[50px]   lg:mt-[100px] p-[50px] 2xl:p-[100px]  "
     >
 
-      <div className="bg-zinc-900 lg:h-[30rem] sm:h-[40rem] mt-[50px] ">
+      <div className=" lg:h-[30rem] sm:h-[40rem] mt-[50px] ">
         <div className="lg:mt-[80px] xs:mt-[350px]  lg:h-[30rem] xs:h-[30rem] ">
           <p className="text-center xs:text-[20px] font-bold lg:text-[40px] bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200 p-[20px]">
             Over the years,

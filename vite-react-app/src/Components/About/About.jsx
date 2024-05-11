@@ -13,12 +13,12 @@ const About = () => {
             </p>
             <a href="https://drive.google.com/file/d/12Y1zwPnIrlljrb_5JUfaRBCKYBI_KAwo/view?usp=sharing" target="_blank" rel="noopener noreferrer"><button className="bg-zinc-800 p-[10px] mt-[20px] w-[200px] hover:bg-white hover:text-slate-800">Resume</button></a>  
             <div className="flex flex-row gap-[30px] mt-[50px]">
-              <p className="text-xs leading-loose ">
-                Highly skilled with solving problems using with code <br /> and
-                working with data.
+              <p className="sm:text-xs lg:text-sm  leading-loose font-medium  ">
+                Highly skilled with solving problems using with code  and <br />
+                working with API's.
               </p>
-              <p className="text-xs leading-loose">
-                With over a year experience <br /> building products for users.
+              <p className="lg:text-xs xs:text-[10px] font-medium  leading-loose  ">
+                With over a year experience <br />  building products for users.
               </p>
             </div>
           </div>
