@@ -14,22 +14,22 @@ const NoteWorthy = () => {
           try my best to get back to you!
         </p>
         
-        <a href="https://drive.google.com/file/d/12Y1zwPnIrlljrb_5JUfaRBCKYBI_KAwo/view?usp=sharing" target="_blank" rel="noopener noreferrer"><button className="bg-zinc-900 p-[10px] mt-[20px] w-[200px] hover:bg-white hover:text-slate-800 text-white text-lg  font-medium">Resume</button></a>  
+        <a href="https://drive.google.com/file/d/12Y1zwPnIrlljrb_5JUfaRBCKYBI_KAwo/view?usp=sharing" target="_blank" rel="noopener noreferrer"><button className="bg-zinc-900 p-[10px] mt-[20px] w-[200px] hover:bg-white hover:text-slate-800 text-white text-thin  font-light">Resume</button></a>  
         
 
         <div className="hidden lg:flex  lg:justify-center lg:mt-9 lg:gap-9 sm:flex mt-[20px]  xs:text-xs sm:justify-center sm:mt-9 sm:gap-9 md:flex  md:justify-center md:mt-9 md:gap-9 xs:flex  xs:justify-center xs:mt-9 xs:gap-9 2xl:hidden  lg:block md:block sm:block xs:block ">
           <a href="https://twitter.com/tomideofGod">
-            <BsTwitter className="text-2xl text-white cursor-pointer  xs:text-2xl" />
+            <BsTwitter className="text-2xl text-white cursor-pointer  xs:text-2xl  hover:text-slate-500" />
           </a>
           <a href="https://www.linkedin.com/in/adeyanju-ayotomide-a630551b9/">
-            <BsLinkedin className="text-2xl 2xl:mt-[20px]  text-white cursor-pointer  xs:text-2xl" />
+            <BsLinkedin className="text-2xl 2xl:mt-[20px]  text-white cursor-pointer  xs:text-2xl hover:text-slate-500" />
           </a>
           <a href="https://github.com/Thintalltom">
-            <BsGithub className="text-2xl text-white 2xl:mt-[20px] cursor-pointer  xs:text-2xl" />
+            <BsGithub className="text-2xl text-white 2xl:mt-[20px] cursor-pointer  xs:text-2xl  hover:text-slate-500" />
           </a>
           <a href="mailto:adeyanjutomide@gmail.com">
             {" "}
-            <IoMdMail  className="text-2xl text-white 2xl:mt-[20px]  cursor-pointer  xs:text-2xl" />
+            <IoMdMail  className="text-2xl text-white 2xl:mt-[20px]  cursor-pointer  xs:text-2xl  hover:text-slate-500" />
           </a>
         </div>
         <div className="mt-[70px]">

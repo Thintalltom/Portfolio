@@ -8,13 +8,13 @@ const Info = () => {
 
       <div className=" lg:h-[30rem] sm:h-[40rem] lg:mt-[50px]   xs:mt-[-20px]">
         <div className="lg:mt-[80px] xs:mt-[350px]  lg:h-[30rem] xs:h-[30rem] ">
-          <p className="text-center xs:text-[30px] font-bold lg:text-[40px] text-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-blue-300 p-[20px]">
+          <p className="text-center xs:text-[30px] font-bold lg:text-[40px] text-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-blue-300">
             Over the years,
           </p>
           <div className="flex justify-center items-center">
 
           <div className="lg:w-[50%] xs:w-[100%] xs:text-sm ">
-          <p className="lg:font-thin text-center xs:font-medium xs:text-[14px] lg:text-[16px] leading-loose  p-[20px]  bg-clip-text text-transparent bg-gradient-to-r from-slate-100 to-blue-200 ">
+          <p className=" bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-blue-300 lg:font-thin text-center xs:font-medium xs:text-[14px] lg:text-[16px] leading-loose  p-[20px]   ">
             I have developed websites for personal brands within Nigeria, 
             undertaken a frontend developer internship at SideHustle, and
             engaged in various hackathons. 
