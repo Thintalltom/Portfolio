@@ -4,11 +4,11 @@ const NoteWorthy = () => {
   return (
     <div
       name="contact"
-      className=" 2xl:p-[100px] text-center  xs:text-xs w-full h-full   p-4 bg-zinc-950 text-white "
+      className=" 2xl:p-[100px] text-center  xs:text-xs w-full h-full xs:mt-[-20px]   p-4 text-white "
     >
       <div>
-      <p className="text-center text-center xs:text-2xl lg:text-6xl font-light bg-clip-text text-transparent bg-gradient-to-r from-orange-50 to-blue-200  mt-[40px]">Wanna Discuss?</p>
-        <p className=" font-thin mt-[20px] xs:text-sm lg:text-lg  bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-blue-300">
+      <p className="text-center text-center xs:text-2xl lg:text-6xl xs:font-bold lg:font-light bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-blue-300  mt-[40px]">Wanna Discuss?</p>
+        <p className=" lg:font-thin mt-[20px] xs:font-medium xs:text-sm lg:text-lg  bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-blue-300">
           Although I’m currently looking for any new opportunities, my inbox is
           always open. <br /> Whether you have a question, a gig or just want to say hi, I’ll
           try my best to get back to you!

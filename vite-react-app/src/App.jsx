@@ -7,6 +7,8 @@ import Work from "./Components/work/Work";
 import Built from "./Components/Built/Built";
 import NoteWorthy from "./Components/Built/NoteWorthy";
 import ScrollToTopButton from "./Components/ScrollToTopButton";
+import { motion, useScroll } from "framer-motion"
+const { scrollYProgress } = useScroll();
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -31,7 +33,7 @@ function App() {
           />
         </div>
       ) : (
-        <div className="md:w-full md:h-full bg-zinc-950  font-sans xs:w-full xs:h-full">
+        <motion.div style={{ scaleX: scrollYProgress }} className="md:w-full md:h-full bg-zinc-950  font-sans xs:w-full xs:h-full">
     
           <About />
           <Info />
@@ -39,7 +41,7 @@ function App() {
           <Work />
           <NoteWorthy />
           <ScrollToTopButton />
-        </div>
+        </motion.div>
       )}
     </div>
   );
