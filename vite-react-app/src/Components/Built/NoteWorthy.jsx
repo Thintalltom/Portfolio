@@ -33,7 +33,7 @@ const NoteWorthy = () => {
           </a>
         </div>
         <div className="mt-[70px]">
-          <p className="text-white cursor-pointer font-thin">Tomide2024</p>
+          <p className=" cursor-pointer font-medium bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-blue-300">Tomide2024</p>
         </div>
       </div>
     </div>
