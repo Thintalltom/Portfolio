@@ -3,7 +3,7 @@ const Built = () => {
   const works = [
     {
       title: 'Agrisage',
-      Link: 'http://afrihack-project.vercel.app/',
+      Link: 'https://agrisagelimited.vercel.app/,
       description: 'This is an AI that predict the harvest time for farmers',
       skills: 'REACTJS + Tailwindcss',
       github: 'https://github.com/Thintalltom/Afrihack-Project'
